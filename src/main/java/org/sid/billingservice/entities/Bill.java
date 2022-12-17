@@ -19,4 +19,6 @@ public class Bill {
     private Long customerID;
     @Transient
     private Customer customer;
+
+
 }
