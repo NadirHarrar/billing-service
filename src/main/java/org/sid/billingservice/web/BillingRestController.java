@@ -33,8 +33,7 @@ public class BillingRestController {
         bill.setCustomer(customer);
         bill.getProductItems().forEach(pi->{
             Product product=productItemRestClient.getProductById(pi.getProductID());
-            //pi.setProduct(product);
-            pi.setProductName(product.getName());
+            pi.setProduct(product);
         });
         return bill;
 

@@ -8,5 +8,5 @@ import java.util.Date;
 public interface BillProjection {
     Long getid();
     Date getbillingDate();
-    Long getCustomerID();
+    Long getcustomerID();
 }

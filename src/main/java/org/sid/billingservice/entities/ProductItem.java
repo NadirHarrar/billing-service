@@ -20,6 +20,8 @@ public class ProductItem {
     private Bill bill;
     @Transient
     private Product product;
-    @Transient
-    private String productName;
+
+    public double getAmount(){
+        return price*quantity;
+    }
 }
